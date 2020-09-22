@@ -1,20 +1,20 @@
 # CSE499A
 The repository for CSE499 as a senior design project at North South University
 
-#Speech Recognition 
-#Download Data
+# Speech Recognition 
+# Download Data
 We use asr_bengali audio dataset for testing our audio. link:
 https://bengali.ai/datasets/
 
 # In speech_rec_1.py we use two function
 
-#Functions:
+# Functions:
 IN function get_file_path we use os.walk to get the path of the audio file from our directory.Then append all audio file individually in a file_paths list.
 In process file, function we use speech recognizer class of python to recognize audio and write it into text format.
 In main function we take the list of all audio from file_paths list. Then call the process_file funcion with each audio. process_file function returns us a string.
 Then we write the string in output file.   
   
-#Accuracy Check
+# Accuracy Check
  In this we check the accuracy with Sequencemeter. We use read() method to take all string line by line and character by character. 
  
  class difflib.SequenceMatcher
